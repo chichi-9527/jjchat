@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>widget_chat</class>
+ <widget class="QWidget" name="widget_chat">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>609</width>
+    <height>661</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>550</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QListWidget" name="listWidget">
+     <property name="styleSheet">
+      <string notr="true">QScrollBar:vertical{ 
+    width:16px;  
+    border-style:flat;
+    border-radius: 8px;
+    border:0px;
+    background: rgb(229, 229, 229);
+} 
+QScrollBar::handle:vertical{ 
+    background: rgba(126,126,126,0.50);
+    border-radius: 8px;
+    width:16px; 
+    min-height:91px; 
+    border-style:flat;
+}
+QScrollBar::handle:vertical::hover{ 
+    background: rgba(85,85,85,0.90);
+    border-radius: 8px;
+    width:16px; 
+}
+QScrollBar::handle:vertical::pressed{ 
+    background: rgba(85,85,85,0.90);
+    border-radius:8px;
+    width:16px; 
+}
+QScrollBar::sub-page:vertical {
+    background: rgb(229, 229, 229);
+	border-style:flat;
+}
+QScrollBar::add-page:vertical {
+	background: rgb(229, 229, 229);
+	border-style:flat;
+}
+QScrollBar::add-line:vertical{
+   background: rgb(229, 229, 229);
+}
+QScrollBar::sub-line:vertical {
+   background: rgb(229, 229, 229);
+}
+/*水平滚动条*/
+QScrollBar:horizontal{ 
+    height:8px;  
+    border-style:flat;
+    border-radius: 4px;
+    border:0px;
+background: #19191A;
+} 
+QScrollBar::handle:horizontal{ 
+    background: rgba(255,255,255,0.50);
+    border-radius: 4px;
+    height:8px; 
+    min-width:91px; 
+    border-style:flat;
+}
+QScrollBar::handle:horizontal::hover{ 
+    background: rgba(255,255,255,0.90);
+    border-radius: 4px;
+    height:8px; 
+}
+QScrollBar::handle:horizontal::pressed{ 
+    background: rgba(255,255,255,0.90);
+    border-radius:4px;
+    height:8px; 
+}
+QScrollBar::sub-page:horizontal {
+    background: #19191A;
+    border-style:flat;
+}
+QScrollBar::add-page:horizontal {
+   background: #19191A;
+    border-style:flat;
+}
+QScrollBar::sub-line:horizontal {
+   background: #19191A;
+}
+QScrollBar::add-line:horizontal{
+   background: #19191A;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::NoFrame</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTextEdit" name="textEdit_tosend">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>150</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_send">
+       <property name="text">
+        <string>发送</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

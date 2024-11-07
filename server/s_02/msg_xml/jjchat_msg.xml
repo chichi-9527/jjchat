@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<package name = "jjboom">
+    <class name = "message_login">
+		<message name = "user_id" type = "uint64" ></message>
+		<message name = "user_pwd" type = "string" ></message>
+	</class>
+	<class name = "message_login_back">
+		<message name = "is_success" type = "bool" ></message>
+		<message name = "cookie_code" type = "string" ></message>
+	</class>
+	<class name = "message_sign_up">
+		<message name = "user_name" type = "string" ></message>
+		<message name = "user_pwd" type = "string" ></message>
+		<message name = "salt" type = "string" ></message>
+	</class>
+	<class name = "message_sign_up_back">
+		<message name = "is_success" type = "bool" ></message>
+		<message name = "sign_up_id" type = "uint64" ></message>
+		<message name = "sign_up_time" type = "string" ></message>
+	</class>
+	<class name = "message_get_sign_up_salt_back">
+		<message name = "salt" type = "string" ></message>
+	</class>
+	<class name = "message_get_sign_in_salt">
+		<message name = "user_id" type = "uint64" ></message>
+	</class>
+	<class name = "message_get_sign_in_salt_back">
+		<message name = "salt" type = "string" ></message>
+	</class>
+	<class name = "message_server_disconnect">
+		<message name = "reason" type = "string" ></message>
+	</class>
+	<class name = "message_logout">
+		<message name = "user_id" type = "uint64" ></message>
+		<message name = "user_cookie_code" type = "string" ></message>
+	</class>
+	<class name = "message_get_friends_groups">
+		<message name = "user_id" type = "uint64" ></message>
+		<message name = "user_cookie_code" type = "string" ></message>
+	</class>
+	<class name = "message_get_friends_groups_back">
+		<enum name = "TYPE">
+			<element name = "TYPE_FRIEND_ONLINE"></element>
+			<element name = "TYPE_FRIEND_OFFLINE"></element>
+			<element name = "TYPE_GROUP"></element>
+		</enum>
+		<message name = "back_type" type = "TYPE" ></message>
+		<message name = "other_id" type = "uint64" ></message>
+		<message name = "other_name" type = "string" ></message>
+		<message name = "join_time" type = "string" ></message>
+	</class>
+	<class name = "message_send_message">
+		<message name = "user_id" type = "uint64" ></message>
+		<message name = "user_cookie_code" type = "string" ></message>
+		<message name = "msg_type" type = "int16" ></message>
+		<message name = "msg_body" type = "string" ></message>
+	</class>
+	<class name = "message_new_message">
+		<message name = "msg_type" type = "int16" ></message>
+		<message name = "group_id" type = "uint64" ></message>
+		<message name = "other_id" type = "uint64" ></message>
+		<message name = "other_name" type = "string" ></message>
+		<message name = "msg_body" type = "string" ></message>
+	</class>
+</package>

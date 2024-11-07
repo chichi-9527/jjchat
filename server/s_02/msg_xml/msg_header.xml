@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<package name = "jjboom">
+    <class name = "message_header">
+		<enum name = "MASSAGE_TYPE">
+		<element name = "MSG_LOGIN"></element>
+		<element name = "MSG_LOGIN_BACK"></element>
+		<element name = "MSG_GET_SIGN_IN_SALT"></element>
+		<element name = "MSG_GET_SIGN_IN_SALT_BACK"></element>
+		<element name = "MSG_SIGN_UP"></element>
+		<element name = "MSG_SIGN_UP_BACK"></element>
+		<element name = "MSG_GET_SIGN_UP_SALT"></element>
+		<element name = "MSG_GET_SIGN_UP_SALT_BACK"></element>
+		<element name = "MSG_LOGOUT"></element>
+		<element name = "MSG_SERVER_DISCONNECT"></element>
+		<element name = "MSG_SERVER_HEARTBEAT"></element>
+		<element name = "MSG_GET_FRIENDS_GROUPS"></element>
+		<element name = "MSG_GET_FRIENDS_GROUPS_BACK"></element>
+		<element name = "MSG_NEW_MESSAGE"></element>
+		<element name = "MSG_SEND_MESSAGE"></element>
+		</enum>
+		<message name = "msg_type" type = "MASSAGE_TYPE" ></message>
+		<message name = "body_size" type = "uint64" ></message>
+	</class>
+</package>

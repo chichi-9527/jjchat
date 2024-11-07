@@ -1,0 +1,13 @@
+{
+	"mysql" : 
+	{
+		"username" : "root",
+		"password" : "123456",
+		"server_host" : "127.0.0.1",
+		"database" : "jjchat"
+	},
+	"server" : 
+	{
+		"port" : 10240
+	}
+}
